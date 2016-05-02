@@ -11,3 +11,5 @@ node_modules/
 .sass-cache
 css/reveal.min.css
 js/reveal.min.js
+
+tsinghua_journal_downloads/

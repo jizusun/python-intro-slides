@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title> Python：一门强大而易学的编程语言 </title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -12,6 +12,7 @@
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
+		<link rel="stylesheet" href="css/custom.css">
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -24,8 +25,602 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+          <h3>Python: 一门强大而易学的编程语言</h3>
+          <img src="images/python-logo.png" alt=""/>
+					<p>
+            <br />
+						南京大学教育研究院 孙继祖<br/>
+            2016-05-03
+					</p>
+        </section>
+
+        <section>
+
+          <section>
+            <h1>主讲人为何许人？</h1>
+          </section>
+          <section>
+            <ul>
+              <li>本科教育技术学专业，硕士课程与教学论专业</li>
+              <li><a href="#/1/2">AP（美国大学先修课程）计算机课</a>教师</li>
+              <li>曾实习于网易杭州研究院，eBay（上海）研发中心</li>
+              <li>主要使用Python和Javascript进行开发</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>AP计算机（AP Computer Science A）</h3>
+            <ul>
+              <li>AP 项目（Advanced Placement Program&reg;）是由美国大学理事会（The College Board）主持，在高中阶段开设的具有大学水平的课程</li>
+              <li>AP Computer Science A（简称APCS），相当于美国大学计算机专业在大一时开设的计算机编程导论课（CS1），主要使用Java教学</li>
+              <li>主要内容有：Java基本语法、类和对象、继承和多态、Java标准类、数组和动态数组（ArrayList）、迭代、搜索和查找 </li>
+              <li>考试形式为：3个小时的纸笔考试，包含40道选择题（90分钟）和4道大题（90分钟）</li>
+            </ul>
+          </section>
+          <section>
+            <h2>
+              在教学中有所感悟，<br/>
+              希望和老师们多交流，多学习。 
+            </h2>
+          </section>
+        </section>
+
+        <section>
+         <section>
+           <h1> “为什么要学Python？” </h1>
+         </section>
+         <section>
+          <h3>美国顶尖大学最流行的编程入门教学语言</h3>  
+            <p>
+              <img src="images/python-most-popular.png" alt=""/>
+            </p>
+            <p><small>来源：<a href="http://cacm.acm.org/blogs/blog-cacm/176450-python-is-now-the-most-popular-introductory-teaching-language-at-top-us-universities/fulltext" target="_blank">BLOG@CACM - Python is Now the Most Popular Introductory Teaching Language at Top U.S. Universities</a> </small></p>
+         </section>
+         <section>
+             <p> A good engineering decision made by Google: </p>
+            <h2>
+              <blockquote cite="http://stackoverflow.com/questions/2560310/heavy-usage-of-python-at-google/2561008#2561008">
+                &ldquo; Python where we can, C++ where we must.” &rdquo;
+              </blockquote>
+            </h2>
+            Source: <a href="http://stackoverflow.com/a/2561008/3074866" target="_blank">http://stackoverflow.com/a/2561008/3074866</a>
+             
+         </section>
+         <section>
+          <h3>Python的优势</h3> 
+          <ul>
+            <li>语法非常简洁，有极强的可读性（如缩进等）</li>
+            <li>Linux自带Python环境，开箱即用</li>
+            <li>高级语言，无需自己处理系统底层的细节问题</li>
+            <li>跨平台，甚至可以运行在各种移动设备上（ARM芯片）</li>
+            <li>解释型（interpreted）语言，无需编译</li>
+            <li>同时支持面向对象（object-oriented）和面向过程（procedure-oriented）的编程</li>
+            <li>丰富的标准库和第三方库，如图表绘制，邮件发送，GUI等</li>
+            <li>开源和免费，有活跃的开源社区</li>
+            <li>...</li>
+          </ul>
+         </section>
+         <section>
+           <h3>Python无处不在</h3>
+           <ul>
+             <li>Web快速开发（如Django，Flask等框架）</li>
+             <li>网络爬虫（如requests库）</li>
+             <li>数值计算（如Numpy库）</li>
+             <li>数据分析（如Pandas库）</li>
+             <li>网络编程（网络数据传输的加密协议）</li>
+             <li>运维自动化</li>
+             <li>机器学习</li>
+             <li>自然语言处理</li>
+             <li>GUI开发</li>
+             <li>...</li>
+           </ul>
+         </section>
+         <section>
+            <h3>Python与高中信息技术的整合</h3> 
+            <ul>
+            <li> 课程内容：选修
+              <ul>
+                <li>湖北省课标中规定的选修模块：算法与程序设计、网络技术应用、人工智能初步等</li>
+                <li>创客教育：树莓派（Raspberry Pi）和物联网（Internet of Things, IoT）</li>
+                <li>信息学奥赛入门的相关课程：目前以C++为主</li>
+              </ul>
+            </li>
+            </ul>
+         </section>
+         <section>
+            <h3>Python与高中信息技术的整合</h3> 
+            <ul>
+              <li>课程形式：MOOC和翻转课堂
+                <ul>
+                  <li><a href="https://www.coursera.org/specializations/python" target="_blank">Coursera: Python for Everybody Specialization （密歇根大学）</a> </li>
+                  <li><a href="http://www.icourse163.org/course/bit-268001#/info" target="_blank">中国MOOC大学： Python语言程序设计（北京理工大学） </a></li>
+                  <li><a href="https://www.coursera.org/learn/hipython/" target="_blank">Coursera： 用Python玩转数据（南京大学）</a></li>
+                </ul>
+              </li>
+            </ul>
+         </section>
+        </section>
+
+        <section>
+         <section>
+           <h1> 巧妇难为无米之炊 </h1>
+           <h3>—— 开发环境准备</h3>
+         </section>
+         <section>
+          <h2>选择Python解释器（Interpreter）</h2> 
+          <ul>
+            <li>Python 2 还是Python 3 ？</li>
+            <li>如果你不知道如何选择，请选择Python3！
+              <ul>
+                <li>某些库可能尚未兼容</li>
+                <li>Linux和Mac的默认Python版本是2.x</li>
+                <li>大势所趋！</li>
+              </ul>
+            </li>
+            <li>本次讲座实例中用的是Python 2.7</li>
+          </ul>
+         </section>
+         <section>
+           <h2>Linux还是Windows？</h2>
+           <ul>
+             <li>Linux环境：开箱即用
+               <ul>
+                 <li>虚拟机：
+                   <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">VirtualBox</a>
+                   +
+                   <a href="https://www.vagrantup.com/downloads.html " target="_blank">Vagrant</a> 
+                   + 
+                   <a href="https://cloud-images.ubuntu.com/vagrant/trusty/current/" target="_blank">Ubuntu</a>
+                 </li>
+                 <li>真机：树莓派</li>
+                 <li>SSH远程登录（Putty）/远程桌面</li>
+               </ul>
+             </li>
+             <li>Windows环境：需要配置
+               <ul>
+                 <li><a href="https://www.python.org/downloads/windows/" target="_blank">Python Release for Windows</a></li>
+               </ul>
+             </li>
+           </ul>
+           <pre><code class="shell data-trim">
+vagrant box add ubuntu-trusty /path/to/trusty-server-cloudimg-amd64-vagrant-disk1.box
+vagrant init ubuntu-trusty
+vagrant up
+vagrant ssh
+           </code></pre>
+         </section>
+
+         <section>
+           <h2>其他</h2>
+           <ul>
+             <li>文本编辑器
+               <ul>
+                 <li><a href="http://docs.python-guide.org/en/latest/dev/env/" target="_blank">Vim</a></li>
+                 <li>Sublime Text</li>
+                 <li>
+                   <strike>
+                     Windows记事本（！！）
+                   </strike>
+                 </li>
+               </ul>
+             </li>
+             <li>集成开发环境（IDE）：
+               <ul>
+                 <li>PyCharm</li>
+                 <li>Enthought Canopy</li>
+                 <li>Eclipse</li>
+               </ul>
+             </li>
+             <li> 交互式编程环境（read–eval–print loop，REPL):
+               <ul>
+                 <li>IDLE</li>
+                 <li>IPython</li>
+                 <li>BPython</li>
+               </ul>
+             </li>
+           </ul>
+         </section>
+
+         <section>
+           <h2>包（Package）管理</h2>
+           <ul>
+             <li>使用<a href="https://packaging.python.org/en/latest/install_requirements_linux/#debian-ubuntu" target="_blank">pip</a>来安装Python包</li>
+             <li>使用<a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/#virtualenvironments-ref" target="_blank">virtualenv</a>来隔离某个Python应用的依赖与共享的依赖</li>
+           </ul>
+           <pre><code class="shell data-trim">
+sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak
+sudo wget http://mirrors.163.com/.help/sources.list.trusty -O /etc/apt/sources.list
+sudo apt-get update
+sudo apt-get install python-pip
+           </code></pre>
+         </section>
+        </section>
+
+        <section>
+          <section>
+            <h1> Python 2.7 <br />语法快速入门 </h1>
+          </section>
+          <section>
+            <pre><code class="java" data-trim>
+public class Main{
+public static void main(String[] args)
+{System.out.println("Hello, World");
+for(int i=0; i<10; i++){System.out.print(i);}
+}
+} 
+            </code></pre>
+            <br>
+            <h2>“要记得缩进！ 大括号要对齐！”</h2> 
+<pre><code class="java" data-trim >
+public class Main{
+   public static void main(String[] args){
+     System.out.println("Hello, World");
+     for(int i=0; i<10; i++){
+       System.out.print(i)
+     }
+   }
+}
+</code></pre>
+          </section>
+          <section>
+            <h2>不要大括号，用缩进取而代之！</h2>
+            <pre><code class="python" data-trim >
+def say_hello():
+    name = input('What is your name? ')
+    print('Hello, ' + name)
+
+if some_var &gt; 10:
+    print "some_var is totally bigger than 10."
+elif some_var &lt; 10:   
+    print "some_var is smaller than 10."
+else:    
+    print "some_var is indeed 10.
+            </code></pre>
+          </section>
+
+          <section>
+            <h2>注释</h2>
+            <pre><code class="python" data-trim>
+# Single line comments start with a number symbol.
+
+""" Multiline strings can be written
+    using three "s, and are often used
+    as comments
+"""
+            </code></pre>
+          </section>
+
+
+          <section>
+            <h2>数据类型和运算符</h2>
+            <pre><code class="python" data-trim>
+# 布尔运算
+# 注意：大小写敏感
+True and False #=> False
+False or True #=> True
+# 取反
+not True  # => False
+not False  # => True
+
+# 相等比较,用 ==
+1 == 1  # => True
+2 == 1  # => False
+# 不相等比较，用 !=
+1 != 1  # => False
+2 != 1  # => True
+
+# 字符串格式化，用%
+x = 'apple'
+y = 'lemon'
+z = "The items in the basket are %s and %s" % (x,y)
+            </code></pre>
+          </section>
+
+          <section>
+            <h2>变量和集合</h2>
+            <pre><code class="python" data-trim>
+# 输出到屏幕
+print "I'm Python. Nice to meet you!" # => I'm Python. Nice to meet you!
+# 从终端输入
+input_string_var = raw_input("Enter some data: ") # 将输入的内容保存为字符串
+
+# 赋值前无需声明
+some_var = 5    # 变量一般用小写，用下划线分隔
+some_var  # => 5
+
+# 列表（List）是有序的集合，可自动伸缩
+li = []
+# 可以使用预填充的列表来初始化
+other_li = [4, 5, 6]
+# 使用append方法，向列表末尾添加元素
+li.append(1)    # li 现在为 [1]
+li.append(2)    # li 现在为 [1, 2]
+li.append(4)    # li 现在为 [1, 2, 4]
+li.append(3)    # li is now [1, 2, 4, 3]
+# 使用pop方法，从列表末尾移除元素
+li.pop()        # => 3 and li 现在为 [1, 2, 4]
+# 像访问数组元素一样，访问列表的元素
+li[0]  # => 1
+# 使用 = 给列表的某元素赋新值
+li[0] = 42
+li[0]  # => 42
+# 访问最后一个元素
+li[-1]  # => 3
+# 访问子列表，注意是左闭右开的区间
+li[1:3]  # => [2, 4]
+li[2:]  # => [4, 3]
+li[:3]  # => [1, 2, 4]
+# 检查列表中是否存在某元素
+1 in li   # => True
+# 使用 "len()" 来检查长度
+len(li)   # => 6
+
+
+# 元组 (Tuples) 类似于列表，但不可变（immutable）
+tup = (1, 2, 3)
+tup[0]   # => 1
+tup[0] = 3  # 出错
+
+# 词典（Dictionary）用来存储映射（键-值对）
+empty_dict = {}
+# 填充词典
+filled_dict = {"one": 1, "two": 2, "three": 3}
+# 使用 [] 寻找某个键所对应的值
+filled_dict["one"]   # => 1
+# 使用 "get()" 避免因为键不存在而出错 
+filled_dict.get("four")   # => None
+# 使用 "keys()" 获得所有键（返回值类型为list）
+filled_dict.keys()   # => ["three", "two", "one"]
+# 使用 "values()" 获得所有值（返回值类型为list）
+filled_dict.values()   # => [3, 2, 1]
+            </code></pre>
+          </section>
+
+
+          <section>
+            <h2>流程控制</h2>
+            <pre><code class="python" data-trim>
+# if语句，注意缩进在Python中非常重要
+# 将会打印 "some_var is smaller than 10"
+some_var = 5
+if some_var &gt; 10:
+    print "some_var is totally bigger than 10."
+elif some_var &lt; 10:    # 非必须
+    print "some_var is smaller than 10."
+else:           # 非必须
+    print "some_var is indeed 10."
+
+"""
+使用循环对list进行遍历
+将会打印:
+    dog is a mammal
+    cat is a mammal
+    mouse is a mammal
+"""
+for animal in ["dog", "cat", "mouse"]:
+    # 字符串格式化的另一种方式
+    print "{0} is a mammal".format(animal)
+"""
+"range(number)" 返回从0到指定数的list
+将会打印:
+    0
+    1
+    2
+    3
+"""
+for i in range(4):
+    print i
+
+"""
+"range(lower, upper)" 返回从lower到upper（不包含）的list，左闭右开区间
+将会打印:
+    4
+    5
+    6
+    7
+"""
+for i in range(4, 8):
+    print i
+            </code></pre>
+          </section>
+
+          <section>
+            <h2>函数</h2>
+            <pre><code class="python" data-trim>
+# 使用 "def" 来创建函数
+def add(x, y):
+    print "x is {0} and y is {1}".format(x, y)
+    return x + y    # 返回值
+# 带参数的函数调用
+add(5, 6)   # => 打印 "x is 5 and y is 6" 并返回 11
+# 使用关键字参数来进行函数调用
+add(y=6, x=5)   # 关键词参数的顺序可以随意
+            </code></pre>
+          </section>
+
+          <section>
+            <h2>模块</h2>
+            <pre><code class="python" data-trim>
+# 导入模块
+import math
+print math.sqrt(16)  # => 4
+# 导入模块的某个函数
+from math import ceil, floor
+print ceil(3.7)  # => 4.0
+print floor(3.7)   # => 3.0
+            </code></pre>
+          </section>
+
+
+        </section>
+
+
+        <section>
+          <section>
+            <h1> 实例教学：网络爬虫 </h1>
+            <br />
+            <p>爬虫：按照一定的规则，自动地、批量地获取网络信息的脚本 </p>
+          </section>
+          <section>
+            <h2>初步分析</h2>
+            <ul>
+              <li> 目标： 
+                <ul>
+                  <li>
+                    以 <a href="http://qhzk.lib.tsinghua.edu.cn:8080/Tsinghua_Journal/year.html" target="_blank">http://qhzk.lib.tsinghua.edu.cn:8080/Tsinghua_Journal/year.html</a> 为入口，批量下载《清华周刊》每一期的目录（前3页）到本地
+                  </li>
+                <li>每张图片需要有针对性的命名</li>
+                </ul>
+              </li>
+              <li>
+                解决方案：
+                <ul>
+                  <li>逐个点击下载？ </li>
+                  <li>逐个截图？</li>
+                  <li>迅雷等提供的批量下载？</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>进一步分析</h2>
+            <ul>
+              <li>步骤
+                <ol>
+                  <li>获取每一期的链接：访问目录页面，文本和链接提取</li>
+                  <li>（潜在的需求）获取每一期的页数：文本提取</li>
+                  <li>获取每一页的图片：页面跳转，图片地址提取</li>
+                </ol>
+              </li>
+              <li>对应的Python库
+                <ul>
+                  <li><a href="http://docs.python-requests.org/en/master/" target="_blank">Requests</a>：模拟浏览器HTTP请求</li>
+                  <li><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">BeautifulSoup</a>：解析HTML页面，找到特定的文本</li>
+                  <li><a href="https://docs.python.org/2/library/re.html" target="_blank">re</a>：正则表达式，提取特定文本</li>
+                  <li><a href="https://docs.python.org/2/library/os.html" target="_blank">os</a>：写入本地文件</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section>
+           <h2>引入所需的库，初始化全局变量</h2> 
+          <pre><code class="python" data-trim >
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import requests, bs4
+import re
+import os
+
+# 用于跟网站子目录拼接
+root_url = "http://qhzk.lib.tsinghua.edu.cn:8080"
+index_url = root_url + "/Tsinghua_Journal/year.html"
+# 创建文件夹
+download_dir = 'tsinghua_journal_downloads'
+if not os.path.exists(download_dir):
+    os.makedirs(download_dir)
+          </code></pre>
+          </section>
+
+          <section>
+            <h2>获取每一期的刊名和链接</h2>
+          <pre><code class="python" data-trim >
+def get_journal_page_urls():
+    # 用于保存每一期刊物的元数据
+    journals = []
+
+    response = requests.get(index_url)
+    # 默认编码为ISO-8859-1，此处将编码修正为UTF-8
+    # https://github.com/kennethreitz/requests/issues/1604
+    response.encoding = 'utf-8'
+    soup = bs4.BeautifulSoup(response.text)
+
+    for link in soup.select('table a'):
+        title = link.getText()
+        url = link.get('href')
+        if(url):
+            one_journal = {
+                    'title': title,
+                    'link': root_url + url, 
+                    }
+            journals.append(one_journal)
+            print one_journal['title'],one_journal['link']
+    return journals
+          </code></pre>
+         </section>
+
+         <section>
+            <h2> 获取每一期的页数 </h2>
+           <pre><code class="python" data-trim>
+def get_page_count(journal):
+    response = requests.get(journal['link'])
+    soup = bs4.BeautifulSoup(response.text)
+    page_count = soup.select('div.command-bar a')[-1].get('href') 
+    # page_count的格式如 'javascript:gotoPage(17)'，需要提取数字
+    page_count = re.findall('\d+', page_count)[0]
+    return int(page_count)
+           </code></pre>
+         </section>
+
+         <section>
+           <h2>下载图片到本地</h2>
+           <pre><code class="python" data-trim>
+# 下载指定范围期数的指定范围页
+
+def get_pages_in_range(page_limit=None, journal_limit=None):
+    journals = get_journal_page_urls()
+    # 遍历限定范围内的期刊
+    for journal in journals[:journal_limit]: 
+        count = page_limit or get_page_count(journal) 
+
+        for page_no in range(1, 1+count):
+            # 发送POST请求，翻页
+            data = {
+                    'action': 'image',
+                    'jumpPage': page_no,
+                   }
+            turnpage_response = requests.post(journal['link'], data=data)
+            # print turnpage_response.url
+
+            # 发送GET请求，获取图片
+            showimage_payload = {
+                    'rand': 'aaa'
+                    }
+            showimage_url = journal['link'].replace('turnPage', 'showImage')
+            image_response = requests.get(showimage_url, params=showimage_payload)
+            # print image_response.url
+
+            # 保存图片到本地
+            filename = u'%s-第%d页.png' % (journal['title'], page_no)
+            filepath = os.path.join(download_dir, filename)
+            with open(filepath, 'wb') as f:
+                f.write(image_response.content)
+                print '%s saved at %s' % (filename, filepath)
+           </code></pre>
+         </section>
+
+         <section>
+          <h2> 函数调用 </h2>  
+          <pre><code class="python" data-trim>
+if __name__ == '__main__':
+    get_pages_in_range(page_limit=3, journal_limit=5)
+          </code></pre>
+         </section>
+
+        </section>
+
+        <section>
+          <h2>学习资料</h2>
+          <ul>
+            <li><a href="http://python.jobbole.com/" target="_blank">Python - 伯乐在线</a></li>
+            <li><a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank">Python教程 - 廖雪峰的官方网站</a>
+            <li><a href="https://learnxinyminutes.com/docs/python/" target="_blank">Learn Python in Y Minutes</a></li>
+            <li><a href="http://www.fullstackpython.com/best-python-resources.html">Best Python Resources - Full Stack Python</a></li>
+            <li><a href="https://developers.google.com/edu/python/" target="_blank">Google's Python Class - Google Developers</a></li>
+          </ul>
+        </section>
+
 			</div>
 		</div>
 
@@ -36,6 +631,7 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
+        slideNumber: 'c/t',
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
